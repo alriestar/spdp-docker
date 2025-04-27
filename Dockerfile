@@ -26,7 +26,7 @@ RUN set -eux; \
     mkdir -p /out; \
     tar -xzf /tmp/spoofdpi.tar.gz -C /out \
     rm -f /tmp/spoofdpi.tar.gz \
-    chmod +x spoofdpi
+    chmod +x spoofdpi \
     apk del ca-certificates wget tar \
     rm -rf /var/cache/apk/*
 
