@@ -33,7 +33,7 @@ RUN set -eux; \
 ###################################
 # 2) Final image: minimal runtime #
 ###################################
-FROM cgr.dev/chainguard/wolfi-base:latest
+FROM cgr.dev/chainguard/wolfi-base
 
 # copy CA certs (for TLS) and the spoofdpi binary
 COPY --from=downloader /out/spoofdpi /usr/bin/spoofdpi
